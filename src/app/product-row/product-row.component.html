@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row border">
+		<div class="col-md-3">
+			<in-product-image [product]="product"></in-product-image>
+		</div>
+		<div class="col-md-6">
+			<div class="title">{{product.name}}</div>
+			<div class="meta">
+				<div class="product-sku">SKU #{{product.sku}}</div>
+				<in-product-department [product]="product"></in-product-department>
+			</div>
+		</div>
+		<div class="col-md-3 price-display">
+			<in-price-display [price]="product.price"></in-price-display>
+		</div>
+	</div>
+</div>

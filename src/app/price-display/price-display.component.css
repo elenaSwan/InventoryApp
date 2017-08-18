@@ -1,0 +1,6 @@
+.price-display {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+    transform: translate(-50%, -50%); 
+}
