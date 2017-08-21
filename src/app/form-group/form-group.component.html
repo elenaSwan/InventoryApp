@@ -1,0 +1,9 @@
+<section class="form">
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+  <div class="form-group">
+    <label>SKU</label>
+    <input type="text" name="sku" class="form-control" placeholder="SKU" ngModel>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</section>
