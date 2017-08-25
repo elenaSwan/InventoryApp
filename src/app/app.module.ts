@@ -13,6 +13,7 @@ import { FormGroupComponent } from './form-group/form-group.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 // import { UserService } from './services/services.component';
 import { UserDemoComponent } from './user-demo/user-demo.component';
+import { YoutubeSearchComponent } from './youtube-search/youtube-search.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UserDemoComponent } from './user-demo/user-demo.component';
     FormBuilderComponent,
     // UserService,
     UserDemoComponent,
+    YoutubeSearchComponent,
   ],
   imports: [
     BrowserModule,
