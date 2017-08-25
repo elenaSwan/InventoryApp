@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import {Product} from './product.model';
-import {FormGroupComponent} from './form-group/form-group.component';
+import {FormBuilderComponent} from './form-builder/form-builder.component';
+// import {FormGroupComponent} from './form-group/form-group.component';
 
 @Component({
   selector: 'in-root',

@@ -1,0 +1,13 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" [class.error]="!myForm.valid && myForm.touched">
+<h5>This is form made with form builder Angula2</h5>
+  <div class="form-group" [class.error]="!sku.valid && sku.touched">
+  <div class="alert alert-primary">{{sku.value}}</div>
+
+    <label>SKU</label>
+    <input type="text" name="sku" class="form-control"  placeholder="Enter SKU" [formControl]="myForm.controls['sku']" [(ngModel)]="sku.value"/>
+    <div *ngIf="!myForm.controls['sku'].valid" class="alert alert-danger">SKU is invalid</div>
+    <!-- <div *ngIf="sku.hasError('re/quired')" class="alert alert-danger">SKU is required</div> -->
+    <div *ngIf="myForm.controls['sku'].hasError('required')"></div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
